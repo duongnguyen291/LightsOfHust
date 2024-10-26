@@ -1,94 +1,154 @@
-# [NextJS Tailwind Event Landing Page](http://demos.creative-tim.com/nextjs-tailwind-event-landing-page?ref=readme-ntpp) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/nextjs-tailwind-event-landing-page&text=Check%20Material%20Tailwind%202%20Template%20made%20by%20@CreativeTim%20#webdesign%20#template%20#materialdesign%20#react%20https://www.creative-tim.com/product/nextjs-tailwind-event-landing-page)
+# NextJS Tailwind Event Project
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-tailwind-event-landing-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-event-landing-page/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-tailwind-event-landing-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-event-landing-page/issues?q=is%3Aissue+is%3Aclosed)
+This project is a web application built with **Next.js** and **Tailwind CSS**. The application is designed to host and showcase student events, inspiring stories, learning experiences, and memorable moments at Hanoi University of Science and Technology.
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/740/original/material-tailwind-react-events-details-template-thumbnail.jpg?1697625313)
+## Table of Contents
 
-Introducing Tailwind Event Landing Page, a dynamic and visually appealing landing page template designed using Tailwind CSS and Material Tailwind.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
 
-Are you in need of a professionally crafted and highly customizable event landing page template, perfect for promoting and hosting events of all types? Your search ends here! We are excited to introduce our Free Event Landing Page Template, thoughtfully designed to cater to the needs of event organizers like your clients.
+## Features
 
-This template, built with Tailwind CSS and Material Tailwind, offers seamless customization to align with your event's unique branding. The free event landing page template comes equipped with essential features such as hero, logo, stats, and testimonial sections.
+- **Responsive Design**: Built with Tailwind CSS for a mobile-friendly experience
+- **Tab Navigation**: Allows switching between image and video content
+- **Dynamic Content Rendering**: Displays different types of event content based on user selection
+- **SEO Optimized**: Each page has its own title and meta description for better SEO
+- **Reusable Components**: Includes reusable components for content cards, navigation, and more
 
-**Documentation built by Developers**
+## Installation
 
-Each element is well presented in very complex documentation.
+### Prerequisites
 
-You can read more about the [documentation here](https://www.material-tailwind.com/docs/react/installation).
+Make sure you have **Node.js** and **npm** (or **yarn**) installed on your system.
 
-**HELPFUL LINKS**
+### Steps
 
-- View [Github Repository](https://github.com/creativetimofficial/nextjs-tailwind-event-landing-page)
-- Check [FAQ Page](https://www.creative-tim.com/faq)
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd <repository-name>
+   ```
 
-## [Demo](https://creative-tim.com/product/nextjs-tailwind-event-landing-page)
+2. **Install dependencies**:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-## Quick start
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Quick start options:
+4. **Open your browser to `http://localhost:3000` to see the project in action**
 
-- Download from [Creative Tim](https://www.creative-tim.com/product/nextjs-tailwind-event-landing-page?ref=readme-ntpp).
+## Usage
 
-## Terminal Commands
+### Main Components
 
-1. Download and Install NodeJs LTS version from [NodeJs Official Page](https://nodejs.org/en/download/).
-2. Navigate to the root ./ directory of the product and run `npm install` to install our local dependencies.
+- **Tabs**: Navigate between "Image" and "Video" sections to see different types of event content
+- **Content Cards**: Displays information about each event, such as title, description, and participant details
+- **Navigation**: Easily accessible navigation bar to move between different pages of the site
 
-## Documentation
+### Customizing Event Content
 
-The documentation for the Material Dashboard is hosted at our [website](https://www.material-tailwind.com/docs/react/installation?ref=readme-ntpp).
+The event content is located in the `src/app/event-content.tsx` file. You can modify the content for images and videos by updating the `EVENT_CONTENT_IMAGE` and `EVENT_CONTENT_VIDEO` arrays.
 
-## Browser Support
+```javascript
+const EVENT_CONTENT_IMAGE = [
+  {
+    title: "Inspiring Learning Journey",
+    des: "An example story that highlights the journey of a student overcoming challenges in their studies.",
+    name: "John Doe",
+    position: "IT Student, HUST",
+    panel: "Image",
+    img: "/path/to/image.jpg",
+  },
+  // More content...
+];
+```
 
-At present, we officially aim to support the last two versions of the following browsers:
+### Customizing the Page Title
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+To change the title that appears in the browser tab, update the `<Head>` component in `src/app/layout.tsx` or `src/app/index.tsx`.
 
-## Resources
+## Project Structure
 
-- [Live Preview](https://demos.creative-tim.com/nextjs-tailwind-event-landing-page?ref=readme-ntpp)
-- [Download Page](https://www.creative-tim.com/product/nextjs-tailwind-event-landing-page?ref=readme-ntpp)
-- Documentation is [here](https://www.material-tailwind.com/docs/react/installation?ref=readme-ntpp)
-- [License Agreement](https://www.creative-tim.com/license?ref=readme-ntpp)
-- [Support](https://www.creative-tim.com/contact-us?ref=readme-ntpp)
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/nextjs-tailwind-event-landing-page/issues)
-- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
+Here's a quick overview of the project structure:
 
-## Reporting Issues
+```
+.
+├── public
+│   ├── image              # Folder for static images
+│   └── logos              # Folder for logos
+├── src
+│   ├── app
+│   │   ├── about-event.tsx        # About the event page
+│   │   ├── event-content.tsx      # Main content page with image and video tabs
+│   │   ├── faq.tsx                # FAQ page
+│   │   ├── layout.tsx             # Layout component for setting up Head and common layouts
+│   │   ├── navbar.tsx             # Navigation bar component
+│   │   ├── footer.tsx             # Footer component
+│   │   └── index.tsx              # Home page
+│   ├── components
+│   │   ├── event-content-card.tsx # Component for displaying event content
+│   │   ├── stats-card.tsx         # Component for displaying statistics
+│   └── styles
+│       └── globals.css            # Global styles
+├── README.md              # Project documentation
+├── tailwind.config.js     # Tailwind CSS configuration file
+└── next.config.js         # Next.js configuration file
+```
 
-We use GitHub Issues as the official bug tracker for the NextJS Tailwind Event Landing Page. Here are some advices for our users that want to report an issue:
+## Customization
 
-1. Make sure that you are using the latest version of the NextJS Tailwind Event Landing Page. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/nextjs-tailwind-event-landing-page?ref=readme-ntpp).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+### Tailwind CSS Configuration
 
-## Technical Support or Questions
+You can customize Tailwind CSS settings by modifying the `tailwind.config.js` file. This file controls your color palette, fonts, and other Tailwind settings.
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-ntpp) instead of opening an issue.
+Example:
 
-## Licensing
+```javascript
+module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#1E3A8A',
+      },
+    },
+  },
+  plugins: [],
+}
+```
 
-- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-ntpp)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-ntpp)
+### Adding New Pages
 
-## Useful Links
+To add a new page to the application:
 
-- [More products](https://www.creative-tim.com/templates?ref=readme-ntpp) from Creative Tim
+1. Create a new `.tsx` file in the `src/app` directory
+2. Define your component and add it to the navigation bar in `navbar.tsx` if needed
 
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+## Contributing
 
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-ntpp) from Creative Tim
+If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
 
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-ntpp) (earn money)
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
 
-##### Social Media
+## License
 
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
+This project is licensed under the MIT License.
