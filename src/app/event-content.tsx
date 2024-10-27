@@ -1,12 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-  Tab,
-  Tabs,
-  TabsHeader,
-  Typography,
-} from "@material-tailwind/react";
+import { Tab, Tabs, TabsHeader, Typography } from "@material-tailwind/react";
 
 import EventContentCard from "@/components/event-content-card";
 
@@ -17,7 +12,7 @@ const EVENT_CONTENT_IMAGE = [
     name: "Nguyễn Văn A",
     position: "Sinh viên ngành CNTT, HUST",
     panel: "Ảnh",
-    img: "/image/avatar1.jpg",
+    img: "/image/study.png",
   },
   {
     title: "Khoảnh Khắc Thư Viện - Nơi Tập Trung và Sáng Tạo",
@@ -25,7 +20,7 @@ const EVENT_CONTENT_IMAGE = [
     name: "Lê Thị B",
     position: "Sinh viên Khoa Kỹ thuật Điện, HUST",
     panel: "Ảnh",
-    img: "/image/avatar2.jpg",
+    img: "/image/library.png",
   },
   {
     title: "Bí Quyết Chinh Phục Môn Học Khó",
@@ -33,7 +28,7 @@ const EVENT_CONTENT_IMAGE = [
     name: "Nhóm Sinh viên C",
     position: "Sinh viên ngành Cơ Khí, HUST",
     panel: "Ảnh",
-    img: "/image/avatar3.png",
+    img: "/image/strategy.png",
   },
 ];
 
@@ -67,23 +62,61 @@ const EVENT_CONTENT_VIDEO = [
 export function EventContent() {
   const [activeTab, setActiveTab] = useState("Image");
 
-  const contentToDisplay = activeTab === "Image" ? EVENT_CONTENT_IMAGE : EVENT_CONTENT_VIDEO;
+  const contentToDisplay =
+    activeTab === "Image" ? EVENT_CONTENT_IMAGE : EVENT_CONTENT_VIDEO;
 
   return (
     <section className="py-8 px-8 lg:py-20">
-      <Tabs value={activeTab} className="mb-8" onChange={(value: string) => setActiveTab(value)}>
+      <Tabs
+        value={activeTab}
+        className="mb-8"
+        onChange={(value: string) => setActiveTab(value)}
+      >
         <div className="w-full flex mb-8 flex-col items-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4" placeholder=""onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-            Câu hỏi thường gặp
+          <Typography
+            variant="h1"
+            color="blue-gray"
+            className="mb-4"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
+            Những kỉ niệm đáng nhớ!
           </Typography>
-          <Typography variant="lead" className="mb-4  !text-gray-500" placeholder=""onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-            Chào mừng bạn đến với phần một số ví dụ về các bài dự thi có thể nộp về sự kiện Lights of HUST.
+          <Typography
+            variant="lead"
+            className="mb-4  !text-gray-500"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
+            Chào mừng bạn đến với phần một số ví dụ về các bài dự thi có thể nộp
+            về sự kiện Lights of HUST.
           </Typography>
-          <TabsHeader className="h-12 w-72 md:w-96" placeholder=""onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-            <Tab value="Image" className="font-medium" onClick={() => setActiveTab("Image")} placeholder=""onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+          <TabsHeader
+            className="h-12 w-72 md:w-96"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
+            <Tab
+              value="Image"
+              className="font-medium"
+              onClick={() => setActiveTab("Image")}
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Ảnh
             </Tab>
-            <Tab value="Video" className="font-medium" onClick={() => setActiveTab("Video")} placeholder=""onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+            <Tab
+              value="Video"
+              className="font-medium"
+              onClick={() => setActiveTab("Video")}
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Video
             </Tab>
           </TabsHeader>
