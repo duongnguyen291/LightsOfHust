@@ -71,19 +71,19 @@ export function EventContent() {
 
   return (
     <section className="py-8 px-8 lg:py-20">
-      <Tabs value={activeTab} className="mb-8" onChange={(value) => setActiveTab(value)}>
+      <Tabs value={activeTab} className="mb-8" onChange={(value: string) => setActiveTab(value)}>
         <div className="w-full flex mb-8 flex-col items-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          <Typography variant="h1" color="blue-gray" className="mb-4" placeholder=""onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             Câu hỏi thường gặp
           </Typography>
-          <Typography variant="lead" className="mb-4  !text-gray-500">
+          <Typography variant="lead" className="mb-4  !text-gray-500" placeholder=""onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             Chào mừng bạn đến với phần một số ví dụ về các bài dự thi có thể nộp về sự kiện Lights of HUST.
           </Typography>
-          <TabsHeader className="h-12 w-72 md:w-96">
-            <Tab value="Image" className="font-medium" onClick={() => setActiveTab("Image")}>
+          <TabsHeader className="h-12 w-72 md:w-96" placeholder=""onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+            <Tab value="Image" className="font-medium" onClick={() => setActiveTab("Image")} placeholder=""onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               Ảnh
             </Tab>
-            <Tab value="Video" className="font-medium" onClick={() => setActiveTab("Video")}>
+            <Tab value="Video" className="font-medium" onClick={() => setActiveTab("Video")} placeholder=""onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               Video
             </Tab>
           </TabsHeader>
