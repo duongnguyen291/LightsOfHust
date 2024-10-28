@@ -19,7 +19,8 @@ export function FixedPlugin() {
           className="w-5 h-5"
           alt="Material Tailwind"
           src="https://www.material-tailwind.com/favicon.png"
-        />{" "}
+          style={{ zIndex: 1000 }}
+        />
         Thực hiện bởi Ban HT-NCKH&HN SOICT
       </Button>
     </a>

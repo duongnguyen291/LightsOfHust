@@ -71,7 +71,14 @@ function Hero() {
             dẫn
           </Typography>
           <div className="bg-black bg-opacity-60 rounded-lg p-6 mb-8 w-full max-w-3xl mx-auto text-white">
-            <Typography variant="h4">Thời gian còn lại:</Typography>
+            <Typography
+              variant="h4"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
+              Thời gian còn lại:
+            </Typography>
             <div className="flex justify-center space-x-6 mt-4">
               {Object.entries(countdown).map(([key, value], index) => (
                 <div key={index} className="flex flex-col items-center">
@@ -83,11 +90,20 @@ function Hero() {
                       variant="h3"
                       className="text-white font-bold"
                       color="black"
+                      placeholder=""
+                      onPointerEnterCapture={() => {}}
+                      onPointerLeaveCapture={() => {}}
                     >
                       {String(value).padStart(2, "0")}
                     </Typography>
                   </div>
-                  <Typography variant="subtitle1" className="text-white mt-2">
+                  <Typography
+                    variant="h3"
+                    className="text-white mt-2"
+                    placeholder=""
+                    onPointerEnterCapture={() => {}}
+                    onPointerLeaveCapture={() => {}}
+                  >
                     {key === "days"
                       ? "Ngày"
                       : key === "hours"
