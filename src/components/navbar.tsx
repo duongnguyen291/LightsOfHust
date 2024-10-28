@@ -117,7 +117,10 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-4 lg:flex">
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScZzpmRHuPVeevldFKOeUa7uQxphm5480ovp5kr_QNHe86Ufw/formrestricted"
+            target="_blank"
+          >
             <Button
               style={{
                 backgroundColor: `${isScrolling ? "black" : "#FFDB00"}`,

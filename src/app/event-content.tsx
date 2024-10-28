@@ -39,7 +39,7 @@ const EVENT_CONTENT_VIDEO = [
     name: "Nhóm Sinh viên E",
     position: "Sinh viên ngành Hóa học, HUST",
     panel: "Video",
-    img: "/image/video.gif",
+    img: "/image/video1.png",
   },
   {
     title: "Video Kinh Nghiệm Học Tập",
@@ -47,7 +47,7 @@ const EVENT_CONTENT_VIDEO = [
     name: "Trần Văn D",
     position: "Sinh viên ngành Kỹ thuật Điện, HUST",
     panel: "Video",
-    img: "/image/video3.gif",
+    img: "/image/video3.png",
   },
   {
     title: "Thực Hành Tại Phòng Thí Nghiệm",
@@ -55,7 +55,7 @@ const EVENT_CONTENT_VIDEO = [
     name: "Nhóm Sinh viên E",
     position: "Sinh viên ngành Hóa học, HUST",
     panel: "Video",
-    img: "/image/video2.gif",
+    img: "/image/video2.png",
   },
 ];
 

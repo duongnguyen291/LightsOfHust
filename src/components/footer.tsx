@@ -48,7 +48,7 @@ export function Footer() {
               onPointerLeaveCapture={() => {}}
             >
               <a
-                href="https://www.facebook.com/"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScZzpmRHuPVeevldFKOeUa7uQxphm5480ovp5kr_QNHe86Ufw/formrestricted"
                 target="_blank"
                 rel="noopener noreferrer"
               >
