@@ -11,7 +11,7 @@ import Faq from "./faq";
 export default function Portfolio() {
   return (
     <>
-      <Navbar />
+      <Navbar details={false} />
       <Hero />
       <SponsoredBy />
       <AboutEvent />

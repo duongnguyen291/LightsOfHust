@@ -31,7 +31,10 @@ Ngoài ra, việc viết câu chuyện kèm theo hình ảnh và video sẽ giú
 
 export function AboutEvent() {
   return (
-    <section className="container mx-auto flex flex-col items-center px-4 py-10">
+    <section
+      className="container mx-auto flex flex-col items-center px-4 py-10"
+      id="Về cuộc thi"
+    >
       <Typography
         variant="h6"
         className="text-center mb-2"

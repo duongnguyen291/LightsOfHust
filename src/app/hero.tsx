@@ -120,16 +120,21 @@ function Hero() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <Button
-              variant="gradient"
-              color="yellow"
-              className="text-xs sm:text-sm md:text-base lg:text-lg"
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
+            <a
+              href="https://drive.google.com/file/d/1flM-keHYnbWwgJZhczrBlzNMxJkI_yah/view?fbclid=IwY2xjawGN5nJleHRuA2FlbQIxMAABHVBMV83p_mlxCAziKnMep-sGbuuILQVmxcfoKju-l8NQRLPMNPStBUoFgw_aem_sAN-MS-EvGA4mltPGNm0hQ"
+              target="_blank"
             >
-              Đọc thêm
-            </Button>
+              <Button
+                variant="gradient"
+                color="yellow"
+                className="text-xs sm:text-sm md:text-base lg:text-lg"
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+              >
+                Đọc thêm
+              </Button>
+            </a>
           </div>
         </div>
       </div>

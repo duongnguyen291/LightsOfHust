@@ -3,3 +3,28 @@ html {
   background-color: #fffcec !important;
   overflow-x: hidden !important;
 }
+.pdf-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  height: 100vh;
+}
+.detailsHeader {
+  width: 90%;
+  font-size: 30px;
+  color: rgb(38, 50, 56);
+  font-weight: bold;
+}
+.headerContainer p {
+  width: 90%;
+  color: gray;
+  font-size: 20px;
+}
+.headerContainer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

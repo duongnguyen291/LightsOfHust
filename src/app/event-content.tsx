@@ -34,24 +34,32 @@ const EVENT_CONTENT_IMAGE = [
 
 const EVENT_CONTENT_VIDEO = [
   {
-    title: "Thực Hành Tại Phòng Thí Nghiệm",
-    des: "Video ghi lại quá trình làm việc nhóm và thực hành tại phòng thí nghiệm, mang đến cho người xem góc nhìn chân thực về môi trường học tập tại HUST.",
+    title: "Học tập và Nghiên cứu 📚",
+    des: `Quá trình vượt qua một môn học khó: Ghi lại hành trình học tập và những phương pháp bạn sử dụng để vượt qua các môn học thử thách. Có thể là cách quản lý thời gian, phương pháp ghi chú, học nhóm.
+Quá trình ôn tập cho các kì thi: Quá trình chuẩn bị, ôn tập và các khoảnh khắc căng thẳng hay thư giãn trước kỳ thi.
+Dự án lớn hoặc đồ án tốt nghiệp: Ghi lại các giai đoạn hoàn thành dự án, từ việc lên ý tưởng, thực hiện, cho đến khi hoàn thành. 
+`,
     name: "Nhóm Sinh viên E",
     position: "Sinh viên ngành Hóa học, HUST",
     panel: "Video",
     img: "/image/video1.png",
   },
   {
-    title: "Video Kinh Nghiệm Học Tập",
-    des: "Video này chia sẻ những kinh nghiệm học tập hữu ích từ một sinh viên HUST, giúp các bạn khác học hỏi và cải thiện phương pháp học tập của mình.",
+    title: "Cuộc sống sinh viên 🌱",
+    des: `Thói quen học tập: Ghi lại những khoảnh khắc học tập hàng ngày của sinh viên, từ việc tự học trong thư viện, làm dự án nhóm đến tham gia các buổi nghiên cứu khoa học. 
+Sự kiện học thuật và nghiên cứu khoa học trong trường: Ghi lại các sự kiện học thuật như hội thảo, tọa đàm, hội nghị nghiên cứu khoa học do trường hoặc các câu lạc bộ học thuật trong trường tổ chức. 
+Cuộc sống ký túc xá với tinh thần học tập: Ghi lại các khoảnh khắc học tập chung trong ký túc xá, từ việc ôn bài cùng nhau, thảo luận về đề tài nghiên cứu đến những buổi tự học nhóm. 
+`,
     name: "Trần Văn D",
     position: "Sinh viên ngành Kỹ thuật Điện, HUST",
     panel: "Video",
     img: "/image/video3.png",
   },
   {
-    title: "Thực Hành Tại Phòng Thí Nghiệm",
-    des: "Video ghi lại quá trình làm việc nhóm và thực hành tại phòng thí nghiệm, mang đến cho người xem góc nhìn chân thực về môi trường học tập tại HUST.",
+    title: "Hoạt động ngoại khóa 🌍",
+    des: `Các chuyến đi thực tế hoặc tham quan: Chia sẻ những hình ảnh hoặc video từ các chuyến đi thực tế đến công ty, nhà máy, hoặc các địa điểm nghiên cứu khác.
+Tham gia các cuộc thi hoặc sự kiện học thuật: Ghi lại quá trình chuẩn bị và sự cố gắng trong từng phần thi của các cuộc thi nghiên cứu, công nghệ hoặc cuộc thi học thuật nói chung.
+`,
     name: "Nhóm Sinh viên E",
     position: "Sinh viên ngành Hóa học, HUST",
     panel: "Video",
@@ -66,7 +74,7 @@ export function EventContent() {
     activeTab === "Image" ? EVENT_CONTENT_IMAGE : EVENT_CONTENT_VIDEO;
 
   return (
-    <section className="py-8 px-8 lg:py-20">
+    <section className="py-8 px-8 lg:py-20" id="Hướng dẫn">
       <Tabs
         value={activeTab}
         className="mb-8"
@@ -81,7 +89,7 @@ export function EventContent() {
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
           >
-            Những kỉ niệm đáng nhớ!
+            Những Topic Gợi Ý!
           </Typography>
           <Typography
             variant="lead"

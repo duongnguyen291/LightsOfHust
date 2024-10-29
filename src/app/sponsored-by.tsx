@@ -11,7 +11,7 @@ const SPONSORS = [
 
 export function SponsoredBy() {
   return (
-    <section className="py-8 px-8 lg:py-20">
+    <section className="py-8 px-8 lg:py-20" id="Đơn vị đồng hành">
       <div className="container mx-auto text-center">
         <Typography
           variant="h6"
@@ -24,16 +24,7 @@ export function SponsoredBy() {
           Được tài trợ và đồng hành bởi
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
-          {SPONSORS.map((logo, key) => (
-            <Image
-              width={256}
-              height={256}
-              key={key}
-              src={`/logos/logo-${logo.source}`}
-              alt={logo.name}
-              className="w-40"
-            />
-          ))}
+          <img src="/image/logovip.png" style={{ width: "500px" }} />
         </div>
       </div>
     </section>

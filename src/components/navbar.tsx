@@ -50,38 +50,39 @@ const NAV_MENU = [
   //   icon: UserCircleIcon,
   // },
   {
-    name: "Tài liệu",
+    name: "Thể lệ cuộc thi",
     icon: CommandLineIcon,
-    href: "https://www.facebook.com/soict.hust",
+    href: "https://drive.google.com/file/d/1flM-keHYnbWwgJZhczrBlzNMxJkI_yah/view?fbclid=IwY2xjawGN5nJleHRuA2FlbQIxMAABHVBMV83p_mlxCAziKnMep-sGbuuILQVmxcfoKju-l8NQRLPMNPStBUoFgw_aem_sAN-MS-EvGA4mltPGNm0hQ",
   },
 ];
 
-export function Navbar() {
+export function Navbar({ details }: { details: Boolean }) {
   const [open, setOpen] = React.useState(false);
-  const [isScrolling, setIsScrolling] = React.useState(false);
+  const [isScrolling, setIsScrolling] = React.useState(details);
 
   const handleOpen = () => setOpen((cur) => !cur);
+  if (!details) {
+    React.useEffect(() => {
+      window.addEventListener(
+        "resize",
+        () => window.innerWidth >= 960 && setOpen(false)
+      );
+    }, []);
 
-  React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
-    );
-  }, []);
-
-  React.useEffect(() => {
-    function handleScroll() {
-      if (window.scrollY > 0) {
-        setIsScrolling(true);
-      } else {
-        setIsScrolling(false);
+    React.useEffect(() => {
+      function handleScroll() {
+        if (window.scrollY > 0) {
+          setIsScrolling(true);
+        } else {
+          setIsScrolling(false);
+        }
       }
-    }
 
-    window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  }
 
   return (
     <MTNavbar

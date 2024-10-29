@@ -3,7 +3,7 @@ import { Typography, Button, IconButton } from "@material-tailwind/react";
 const CURRENT_YEAR = new Date().getFullYear();
 const LINKS = [
   "Đơn vị đồng hành",
-  "Về chúng tôi",
+  "Về cuộc thi",
   "Hướng dẫn",
   "Tài liệu",
   "Fanpage",
@@ -75,7 +75,7 @@ export function Footer() {
               <li key={index}>
                 <Typography
                   as="a"
-                  href="#"
+                  href={`#${link}`}
                   variant="small"
                   color="white"
                   className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
