@@ -61,28 +61,29 @@ export function Navbar({ details }: { details: Boolean }) {
   const [isScrolling, setIsScrolling] = React.useState(details);
 
   const handleOpen = () => setOpen((cur) => !cur);
-  if (!details) {
-    React.useEffect(() => {
+  React.useEffect(() => {
+    if (!details) {
       window.addEventListener(
         "resize",
         () => window.innerWidth >= 960 && setOpen(false)
       );
-    }, []);
+    }
+  }, []);
 
-    React.useEffect(() => {
-      function handleScroll() {
-        if (window.scrollY > 0) {
-          setIsScrolling(true);
-        } else {
-          setIsScrolling(false);
-        }
+  React.useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 0) {
+        setIsScrolling(true);
+      } else {
+        setIsScrolling(false);
       }
-
+    }
+    if (!details) {
       window.addEventListener("scroll", handleScroll);
 
       return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-  }
+    }
+  }, []);
 
   return (
     <MTNavbar

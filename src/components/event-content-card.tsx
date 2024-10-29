@@ -74,16 +74,19 @@ export function EventContentCard({
         >
           {title}
         </Typography>
-        <Typography
-          className="mb-12 md:w-8/12 font-medium !text-gray-500"
-          placeholder=""
-          onPointerEnterCapture={() => {}}
-          onPointerLeaveCapture={() => {}}
-        >
-          {des.split("\n").map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-        </Typography>
+
+        {des.split("\n").map((paragraph, index) => (
+          <Typography
+            className="mb-12 md:w-8/12 font-medium !text-gray-500"
+            placeholder=""
+            key={index}
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
+            {paragraph}
+          </Typography>
+        ))}
+
         <div className="flex items-center gap-4">
           <Avatar
             variant="circular"
