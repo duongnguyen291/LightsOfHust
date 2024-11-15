@@ -13,7 +13,7 @@ function Hero() {
   });
 
   useEffect(() => {
-    const eventDate = new Date("2024-12-01T00:00:00").getTime();
+    const eventDate = new Date("2024-12-08T00:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -50,7 +50,7 @@ function Hero() {
             onPointerLeaveCapture={() => {}}
             placeholder=""
           >
-            04-11-2024 @ Đại học Bách Khoa Hà Nội
+            15-11-2024 @ Đại học Bách Khoa Hà Nội
           </Typography>
           <Typography
             variant="h1"
@@ -121,7 +121,7 @@ function Hero() {
           </div>
           <div className="flex items-center gap-4">
             <a
-              href="https://drive.google.com/file/d/1flM-keHYnbWwgJZhczrBlzNMxJkI_yah/view?fbclid=IwY2xjawGN5nJleHRuA2FlbQIxMAABHVBMV83p_mlxCAziKnMep-sGbuuILQVmxcfoKju-l8NQRLPMNPStBUoFgw_aem_sAN-MS-EvGA4mltPGNm0hQ"
+              href="https://drive.google.com/file/d/1ZgcyDJerMF-cH1zbP27dfWaSw4FRRJrp/view?usp=drive_link"
               target="_blank"
             >
               <Button

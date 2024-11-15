@@ -52,7 +52,7 @@ const NAV_MENU = [
   {
     name: "Thể lệ cuộc thi",
     icon: CommandLineIcon,
-    href: "https://drive.google.com/file/d/1flM-keHYnbWwgJZhczrBlzNMxJkI_yah/view?fbclid=IwY2xjawGN5nJleHRuA2FlbQIxMAABHVBMV83p_mlxCAziKnMep-sGbuuILQVmxcfoKju-l8NQRLPMNPStBUoFgw_aem_sAN-MS-EvGA4mltPGNm0hQ",
+    href: "https://drive.google.com/file/d/1ZgcyDJerMF-cH1zbP27dfWaSw4FRRJrp/view?usp=drive_link",
   },
 ];
 
@@ -120,7 +120,7 @@ export function Navbar({ details }: { details: Boolean }) {
         </ul>
         <div className="hidden items-center gap-4 lg:flex">
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScZzpmRHuPVeevldFKOeUa7uQxphm5480ovp5kr_QNHe86Ufw/formrestricted"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScZzpmRHuPVeevldFKOeUa7uQxphm5480ovp5kr_QNHe86Ufw/viewform"
             target="_blank"
           >
             <Button
@@ -163,7 +163,10 @@ export function Navbar({ details }: { details: Boolean }) {
             ))}
           </ul>
           <div className="mt-6 flex items-center gap-4">
-            <a href="https://www.materila-tailwind.com/blocks" target="_blank">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScZzpmRHuPVeevldFKOeUa7uQxphm5480ovp5kr_QNHe86Ufw/viewform"
+              target="_blank"
+            >
               <Button
                 color="gray"
                 placeholder=""
